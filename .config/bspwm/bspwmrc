@@ -4,7 +4,7 @@ sxhkd &
 xrdb ~/.Xresources &
 $HOME/.config/polybar/launch.sh
 xwallpaper --zoom Data/Pictures/Wallpapers/nature/starry-night-over-corsica-wallpaper-for-1920x1080-63-986.jpg
-synclient TapButton2=2
+synclient TapButton1=1
 synclient TapButton2=3
 udiskie &
 dunst &
