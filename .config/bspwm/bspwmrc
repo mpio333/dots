@@ -10,7 +10,7 @@ udiskie &
 dunst &
 picom --experimental-backends &
 redshift &
-setxkbmap -layout us -variant altgr-intl -option caps:escape
+setxkbmap -layout us -variant altgr-intl -option caps:escape &
 
 
 bspc monitor -d I II III IV V VI VII VIII IX X
