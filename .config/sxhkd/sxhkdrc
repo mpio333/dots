@@ -128,8 +128,8 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
    light -U 10
 XF86AudioLowerVolume
-   pactl set-sink-volume 0 -10%
+   pactl set-sink-volume 0 -5%
 XF86AudioRaiseVolume
-   pactl set-sink-volume 0 +10%
+   pactl set-sink-volume 0 +5%
 XF86AudioMute
    pactl set-sink-mute 0 toggle
