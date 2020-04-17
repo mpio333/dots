@@ -30,6 +30,7 @@ Plugin 'JulesWang/css.vim'
 Plugin 'chr4/nginx.vim'
 Plugin 'chr4/sslsecure.vim'
 Plugin 'neomutt/neomutt.vim'
+Plugin 'lervag/vimtex'
 "Appearance
 Plugin 'itchyny/lightline.vim'
 Plugin 'ryanoasis/vim-devicons'
@@ -170,3 +171,13 @@ cmap w!! w !sudo tee %
 
 " Use urlview to choose and open an url:
 noremap <leader>u :w \| startinsert \| term urlview %<cr>
+
+setlocal spell
+set spelllang=en_us
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
