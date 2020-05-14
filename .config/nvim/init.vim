@@ -22,6 +22,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'unblevable/quick-scope'
 " Plugin 'neoclide/coc.nvim'
 "Syntax
 Plugin 'sheerun/vim-polyglot'
@@ -40,11 +41,7 @@ Plugin 'KeitaNakamura/neodark.vim'
 Plugin 'junegunn/goyo.vim' "Writter mode
 Plugin 'junegunn/limelight.vim' "Highlight only focused, dim the rest
 Plugin 'airblade/vim-gitgutter' "Show git diff in gutter
-Plugin 'trevordmiller/nova-vim' "Color scheme
-Plugin 'arcticicestudio/nord-vim' "Color scheme
-Plugin 'chriskempson/base16-vim'
-Plugin 'rakr/vim-two-firewatch'
-Plugin 'phanviet/vim-monokai-pro'
+Plugin 'rakr/vim-one'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,6 +55,11 @@ endif
 set encoding=UTF-8
 set fileencoding=utf-8
 syntax on
+
+colorscheme one
+let g:neodark#background = '#202020'
+let g:one_allow_italics = 1
+set background=dark
 
 set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
 
@@ -146,10 +148,6 @@ augroup filetypedetect
   au BufRead,BufNewFile *.theme set filetype=php
 augroup END
 
-let g:neodark#background = '#202020'
-colorscheme neodark
-" let base16colorspace=256
-" colorscheme base16-mpio
 hi Normal guibg=NONE ctermbg=NONE
 
 highlight Comment cterm=italic gui=italic
@@ -181,3 +179,5 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

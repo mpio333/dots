@@ -2,7 +2,6 @@
 set preview false
 set previewer ~/scripts/lf/preview
 #set previewer pistol
-set hidden true
 set color256 true
 set drawbox true
 set icons true
@@ -75,6 +74,7 @@ cmd unarchive ${{
       *.zip) unzip "$f" ;;
       *.tar.gz) tar -xzvf "$f" ;;
       *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar.xz) tar -xvf "$f" ;;
       *.tar) tar -xvf "$f" ;;
       *) echo "Unsupported format" ;;
   esac
@@ -134,3 +134,5 @@ map U unselect
 
 # Movement
 map gus cd /run/media/hellall
+
+map - $~/.config/lf/draw_img.sh $f

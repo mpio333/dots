@@ -4,13 +4,15 @@ sxhkd &
 xrdb ~/.Xresources &
 $HOME/.config/polybar/launch.sh
 xwallpaper --zoom Data/Pictures/Wallpapers/nature/starry-night-over-corsica-wallpaper-for-1920x1080-63-986.jpg
-synclient TapButton1=1
-synclient TapButton2=3
+synclient TapButton1=1 &
+synclient TapButton2=3 &
 udiskie &
 dunst &
 picom --experimental-backends &
 redshift &
 setxkbmap -layout us -variant altgr-intl -option caps:escape &
+xsetroot -cursor_name left_ptr &
+xrdb -load ~/.Xresources
 
 
 bspc monitor -d I II III IV V VI VII VIII IX X
