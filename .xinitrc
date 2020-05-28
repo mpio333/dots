@@ -1,1 +1,1 @@
-exec dbus-launch --exit-with-session bspwm
+exec dbus-run-session --exit-with-session bspwm
