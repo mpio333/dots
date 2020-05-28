@@ -12,7 +12,7 @@ picom --experimental-backends &
 redshift &
 setxkbmap -layout us -variant altgr-intl -option caps:escape &
 xsetroot -cursor_name left_ptr &
-xrdb -load ~/.Xresources
+#xrdb -load ~/.Xresources
 
 
 bspc monitor -d I II III IV V VI VII VIII IX X

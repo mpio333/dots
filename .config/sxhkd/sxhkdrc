@@ -125,9 +125,9 @@ super + {Left,Down,Up,Right}
 
 # Media Keys
 XF86MonBrightnessUp
-   light -A 10
+   doas light -A 10
 XF86MonBrightnessDown
-   light -U 10
+   doas light -U 10
 XF86AudioLowerVolume
    pactl set-sink-volume 0 -5%
 XF86AudioRaiseVolume
