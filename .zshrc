@@ -62,3 +62,4 @@ alias vim=nvim
 alias sudo='sudo '
 alias wget='wget --hsts-file=~/.config/wget-hsts'
 alias ydl='youtube-dl -f "bestvideo[vcodec^=avc1][height<=1080]+bestaudio[ext=m4a]" --merge-output-format mp4'
+alias xi='doas xbps-install'
